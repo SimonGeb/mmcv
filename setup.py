@@ -159,7 +159,7 @@ def get_extensions():
         cuda_args = os.getenv('MMCV_CUDA_ARGS')
         extra_compile_args = {
                     # 'nvcc': [cuda_args, '-std=c++14'] if cuda_args else ['-std=c++14'],
-                    'nvcc': [cuda_args, '-std=c++14', '-arch=sm_90'] if cuda_args else ['-std=c++14'],
+                    'nvcc': [cuda_args, '-std=c++14', '-arch=sm_90', '-arch=sm_120'] if cuda_args else ['-std=c++14'],
                     'cxx': ['-std=c++14'],
                 }
         if torch.cuda.is_available() or os.getenv('FORCE_CUDA', '0') == '1':
