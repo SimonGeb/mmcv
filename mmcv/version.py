@@ -1,5 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-__version__ = '2.2.0'
+__version__ = '2.1.0' # Quick hack to mmdet does not fail on init
 
 
 def parse_version_info(version_str: str, length: int = 4) -> tuple:
